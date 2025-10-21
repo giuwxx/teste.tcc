@@ -1,0 +1,17 @@
+{
+    "name": "amanda/teste.tcc",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Amanda\\TesteTcc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "amandadua",
+            "email": "amandaduartesantos13@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
