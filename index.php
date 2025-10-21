@@ -22,8 +22,8 @@
                 <li><a href="#depoimentos">Depoimentos</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="btn-login">Entrar</button>
-                <button class="btn-cta">Começar Agora</button>
+                <a href="View/login.php" class="btn-login">Entrar</a>
+                <a href="View/cadastro.php" class="btn-cta">Começar Agora</a>
             </div>
             <button class="mobile-menu-toggle" aria-label="Menu">
                 <span></span>
@@ -50,12 +50,12 @@
                     Aprenda com exercícios práticos e metodologia comprovada.
                 </p>
                 <div class="hero-cta">
-                    <button class="btn-primary">
+                    <a href="cadastro.php" class="btn-primary">
                         <span><strong>Começar Gratuitamente</strong></span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </button>
+                    </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
@@ -350,12 +350,11 @@
                     e conquistaram a vaga dos sonhos. Comece gratuitamente hoje!
                 </p>
                 <div class="cta-buttons">
-                    <button class="btn-primary large">
+                   <a href="cadastro.php" class="btn-primary large">
                         <span>Começar Gratuitamente</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </button>
+                    </a>
                     <span class="cta-note">100% gratuito • Sem cartão de crédito</span>
                 </div>
             </div>
