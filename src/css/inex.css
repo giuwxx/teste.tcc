@@ -315,23 +315,25 @@ body {
     height: 2.5rem;
     background: #dee2e6;
 }
-
-/* Hero Visual */
 .hero-visual {
-    position: relative;
-    height: 37.5rem;
+    max-width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0; 
 }
 
-.floating-card {
-    position: absolute;
-    background: var(--branco);
-    padding: 1.25rem;
-    border-radius: 1rem;
-    box-shadow: var(--sombra-media);
-    animation: float 3s ease-in-out infinite;
-    z-index: 10;
-    border: 0.0625rem solid rgba(7, 51, 110, 0.05);
+.hero-visual img {
+    max-width: 100%; 
+    height: auto;
+    width: 1010px;
+    object-fit: contain; 
 }
+
+.hero-text {
+    max-width: 38rem; 
+}
+
 
 @keyframes float {
     0%, 100% {
@@ -923,10 +925,24 @@ body {
         gap: 3rem;
     }
 
-    .hero-visual {
-        height: 31.25rem;
+    .hero-content {
+        grid-template-columns: 1fr; /* Coloca o texto e a imagem em colunas separadas em telas menores */
+        gap: 2rem;
+        padding-top: 5rem;
+        text-align: center; /* Centraliza o texto e botões */
     }
 
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-cta {
+        justify-content: center; /* Centraliza o botão CTA */
+    }
     .resources-content {
         grid-template-columns: 1fr;
     }
