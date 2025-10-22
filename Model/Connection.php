@@ -20,7 +20,7 @@ class Connection
     private $username = 'root';
 
     // Senha do banco
-    private $password = '';
+    private $password = 'Amanda.13';
 
     // Objeto de conexão PDO
     private $connection;

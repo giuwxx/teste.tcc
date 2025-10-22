@@ -4,7 +4,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'intelecta');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'Amanda.13');
 
 // Configurações da aplicação
 define('APP_NAME', 'Intelecta');

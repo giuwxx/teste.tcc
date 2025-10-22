@@ -114,6 +114,7 @@ body {
 }
 
 .btn-login {
+    text-decoration: none;
     padding: 0.625rem 1.5rem;
     background: transparent;
     border: 0.0625rem solid var(--azul-principal);
@@ -132,6 +133,7 @@ body {
 }
 
 .btn-cta {
+    text-decoration: none;
     padding: 0.625rem 1.5rem;
     background: var(--azul-principal);
     border: none;
@@ -241,6 +243,7 @@ body {
 }
 
 .btn-primary {
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;

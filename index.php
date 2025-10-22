@@ -50,7 +50,7 @@
                     Aprenda com exercícios práticos e metodologia comprovada.
                 </p>
                 <div class="hero-cta">
-                    <a href="cadastro.php" class="btn-primary">
+                    <a href="View/cadastro.php" class="btn-primary">
                         <span><strong>Começar Gratuitamente</strong></span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

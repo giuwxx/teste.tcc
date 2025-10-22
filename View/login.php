@@ -43,24 +43,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Elegance</title>
-    <link rel="stylesheet" href="../Templates/css/login.css">
+    <title>Login - Intelecta</title> 
+    <link rel="stylesheet" href="../src/css/login.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="background-visual"></div>
     <div class="login-container">
-        <div class="background-image">
-            <img src="../Templates/img/9592633.jpg" alt="background">
-        </div>
         <div class="login-form-container">
             <div class="logo-container">
-                <i class="fa-solid fa-lips logo-icon"></i>
-                <h1 class="logo-text">Elegance</h1>
+                <i class="fa-solid fa-lightbulb logo-icon"></i> 
+                <h1 class="logo-text">Intelecta</h1> 
             </div>
             
             <div class="login-form">
-                <h2 class="welcome-title">Olá, administrador!</h2>
-                <p class="welcome-subtitle">Para continuar, digite seu e-mail e senha</p>
+                <h2 class="welcome-title">Bem-vindo(a) de volta!</h2>
+                <p class="welcome-subtitle">Acesse sua conta para continuar seus estudos.</p>
+                
                 <?php if (!empty($loginMessage )): ?>
                     <div class="alert alert-error">
                         <?php echo $loginMessage; ?>
@@ -69,64 +68,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                 <form method="POST" class="form">
                     <div class="input-group">
-                        <label for="email">E-mail *</label>
-                        <input 
+                        <label for="email">E-mail</label> <input 
                             type="email" 
                             id="email" 
                             name="email" 
                             required
-                            placeholder="Digite seu e-mail"
+                            placeholder="seu.email@exemplo.com"
                             value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>"
                         >
                     </div>
                     <div class="input-group">
-                        <label for="password">Senha *</label>
-                        <input 
+                        <label for="senha">Senha</label> <input 
                             type="password" 
-                            id="password" 
-                            name="password" 
+                            id="senha" 
+                            name="senha" 
                             required
-                            placeholder="Digite sua senha"
+                            placeholder="Sua senha"
                         >
                     </div>
-                    <button type="submit" class="login-btn">Continuar</button>                  
+                    <button type="submit" class="login-btn">Entrar</button> 
                 </form>
                 
                 <div class="divider">
-                    <span>ou utilize suas redes sociais</span>
+                    <span>ou acesse rapidamente</span>
                 </div>
                 <div class="social-buttons">
-                    <div class="social-btn facebook-btn">
-                        <i class="fab fa-facebook-f"></i>
-                    </div>
-                    
-                    <div class="social-btn google-btn">
-                        <i class="fab fa-google"></i>
-                    </div>
-                    
-                    <div class="social-btn apple-btn">
-                        <i class="fab fa-apple"></i>
-                    </div>
+                    <div class="social-btn facebook-btn"> <i class="fab fa-facebook-f"></i> </div>
+                    <div class="social-btn google-btn"> <i class="fab fa-google"></i> </div>
+                    <div class="social-btn apple-btn"> <i class="fab fa-apple"></i> </div>
                 </div>
                 
                 <div class="register-link">
-                    <p>Não tem uma conta? <a href="../index.php">Cadastrar Administrador</a></p>
+                    <p>Não tem uma conta? <a href="cadastro.php">Crie sua conta Intelecta</a></p>
                 </div>
             </div>
         </div>
     </div>
-    
-    <script>
-        document.querySelector('.facebook-btn').addEventListener('click', function() {
-            alert('Login com Facebook em desenvolvimento')
-        })
-        
-        document.querySelector('.google-btn').addEventListener('click', function() {
-            alert('Login com Google em desenvolvimento')
-        })
-        document.querySelector('.apple-btn').addEventListener('click', function() {
-            alert('Login com Apple em desenvolvimento')
-        })
-    </script>
-</body>
+    </body>
 </html>
